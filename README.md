@@ -6,7 +6,7 @@ Frontend en angular que se encarga de consumir el API Rest desarrollado como tes
 - TypeScript version 3.7.4
 - direccion base http://localhost:4200
 - Bootstrap version 4.4.1 (integracion por CDN)
-- iniciar aplicacion en el puerto 4200: 
+- iniciar aplicacion en el puerto 4200 en angular cli: 
 ```
 ng serve -o
 ```
