@@ -11,3 +11,4 @@ Frontend en angular que se encarga de consumir el API Rest desarrollado como tes
 ng serve -o
 ```
 * Nota: No se realizo el formulario de ingreso de usuarios, ya que el ejercicio no lo solicita, pero en algun otro escenario lo mas probable es que se ubiera incluido.
+* Nota 2: En la tabla cuando el usuario esta de cumpleaños, se muestra en la ultima columna un boton para ver el poema en una ventana modal.
