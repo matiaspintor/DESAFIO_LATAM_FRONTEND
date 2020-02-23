@@ -8,6 +8,7 @@ WORKDIR /usr/src/app/
 
 # Instalacion de angular cli
 RUN npm install -g @angular/cli
+RUN npm install -g @angular-devkit/build-angular
 
 # Se abre el puerto 4200
 EXPOSE 4200
