@@ -12,13 +12,13 @@ Para ejecutar la aplicacion con docker es necesario tener instalado docker
 - Abrir la linea de comandos y situarse a la carpeta del proyecto donde se encuentra el Dockerfile y el docker-compose.yml
 - Para crear la imagen de npm y del proyecto, ejecutar
 ```
-docker-compose build
+docker-compose up
 ```
-- Ejecutar el comando para crear el contenedor y agregar el volumen apuntando a la ruta donde se encuentra el proyecto (remplazar RUTA_PROYECTO, mantener comillas dobles)
+- Ejecutar el comando para crear el contenedor
 ```
-docker run -ti --rm -v "RUTA_PROYECTO":/usr/src/app -p 4200:4200 desafio_latam_frontend_frontend bash
+docker run -ti --rm -p 4200:4200 desafio_latam_frontend_frontend bash
 ```
-- Ahora con el contenedor inicializado ejecutar npm start para inciar la aplicacion angular que estara escuchando en el puerto 4200
+- Ahora con el contenedor inicializado ejecutar dentro del contenedor npm start para inciar la aplicacion angular que estara escuchando en el puerto 4200
 ```
 npm start
 ```
@@ -32,7 +32,11 @@ npm start
 ```
 npm install -g @angular/cli
 ```
-- Abrir la consola y dirigirse a la ruta donde se encuentra el proyecto y ejecutar el comando
+- Abrir la consola y dirigirse a la ruta donde se encuentra el proyecto y ejecutar el comando para instalar las dependencias
+```
+npm install --save-dev @angular-devkit/build-angular
+```
+- Ejecutar el siguiente comando para inicializar la aplicacion
 ```
 ng serve -o
 ```
