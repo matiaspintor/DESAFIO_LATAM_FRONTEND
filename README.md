@@ -16,7 +16,7 @@ docker-compose build
 ```
 - Ejecutar el comando para crear el contenedor y agregar el volumen apuntando a la ruta donde se encuentra el proyecto (remplazar RUTA_PROYECTO, mantener comillas dobles)
 ```
-docker run -ti --rm -v "RUTA_PROYECTO":/usr/src/app -p 4200:4200 desafiolatam_frontend bash
+docker run -ti --rm -v "RUTA_PROYECTO":/usr/src/app -p 4200:4200 desafio_latam_frontend_frontend bash
 ```
 - Ahora con el contenedor inicializado ejecutar npm start para inciar la aplicacion angular que estara escuchando en el puerto 4200
 ```
